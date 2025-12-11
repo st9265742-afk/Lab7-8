@@ -1,7 +1,7 @@
 /* Для дектоп */
 
 @media screen and (min-width: 1200px) {
-    * {
+* {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
@@ -49,6 +49,7 @@ h1 {
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 
 .card img {
@@ -123,8 +124,68 @@ footer .data
 
 .info
 {
-    float:right;
+    display: flex;
+    flex-direction: column;
 }
+
+.line
+{
+    border-bottom: 1px solid #444;
+    margin-top: 5px;
+}
+
+.calories-filter {
+    width: 220px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.filters h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.filters label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filters input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filters input[type="submit"],
+.filters input[type="reset"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    background: #e5563d;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.filters input[type="submit"]:hover,
+.filters input[type="reset"]:hover {
+    background: #d84930;
+}
+
+.buttons
+{
+    margin-bottom: 20px;
+}
+
 }
 
 /* Для планшетів */
